@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<img src="https://github-readme-stats.vercel.app/api?username=thyarles&show_icons=true&theme=dark&count_private=true%22" alt="stats">
+<img src="https://github-readme-stats.vercel.app/api?username=thyarles&show_icons=true&theme=light&count_private=true" alt="stats">
 
 ### About me
 
