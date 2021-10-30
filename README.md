@@ -8,4 +8,4 @@ I’m currently learning [Go](https://golang.org/) and studying for the [CKS](ht
 
 I’m looking to collaborate on [Gravitee Helm Charts](https://github.com/gravitee-io/helm-charts) and for help with [Harbor](https://github.com/goharbor/harbor) these days.
 
-Ask me about anything and if you want to known me a little better, please reach me on [Linkedin](https://www.linkedin.com/in/thyarles) or [cclaim](https://www.youracclaim.com/users/thyarles/badges).
+Ask me about anything and if you want to known me a little better, please reach me on [Linkedin](https://www.linkedin.com/in/thyarles) or [Credly](https://www.credly.com/users/thyarles/badges).
