@@ -10,6 +10,24 @@ Yeah, a simple introduction because simplicity worths a lot to me! If you want t
 
 <p align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQHenATWnzpdyA/feedshare-shrink_800/0/1641973776197?e=1645056000&v=beta&t=ru08Sk-nVBNe4Gr5q4aJxTqcNPY3KzvVvuEUZ8iLZzI" alt="stats" width="450" height="450"></p>
 
+## Filosophy
+
+```mermaid
+sequenceDiagram
+    participant Problem
+    participant Study
+    Problem->>Study: The problem is a peace of cake?
+    Study->>Solved: Yeap, solve it!
+    Solved-->>Problem: Next problem, please.
+    loop study more
+        Study->>Solved: Nope, you need to study more!
+    end
+    Note left of Solved: Remember: never give up!
+    Solved-->>Problem: You beat me!
+    Solved->>Study: Save knowledge for the next one?
+    Study-->>Solved: For sure!
+```
+
 ##
 <img src="https://raw.githubusercontent.com/thyarles/thyarles/main/github.png" alt="github">
 
