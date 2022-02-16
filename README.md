@@ -18,14 +18,14 @@ sequenceDiagram
     participant Study
     Problem->>Study: The problem is a peace of cake?
     Study->>Solved: Yeap, solve it!
-    Solved-->>Problem: Next problem, please.
     loop study more
         Study->>Solved: Nope, you need to study more!
     end
     Note left of Solved: Remember: never give up!
-    Solved-->>Problem: You beat me!
-    Solved->>Study: Save knowledge for the next one?
-    Study-->>Solved: For sure!
+    Solved-->>Study: You beat me!
+    Study-->>Problem: Save knowledge for the next one?
+    Problem->>Study: For sure!
+    Study-->>Problem: Next problem, please.
 ```
 
 ##
