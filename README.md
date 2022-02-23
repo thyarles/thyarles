@@ -8,7 +8,9 @@ Yeah, a simple introduction because simplicity worths a lot to me! If you want t
   
 ## A little about my dutties  
 
-<p align="center"><img src="https://media-exp1.licdn.com/dms/image/C4E22AQHenATWnzpdyA/feedshare-shrink_800/0/1641973776197?e=1645056000&v=beta&t=ru08Sk-nVBNe4Gr5q4aJxTqcNPY3KzvVvuEUZ8iLZzI" alt="stats" width="450" height="450"></p>
+<p align="center"><img src="https://i.ytimg.com/vi/bj-LMniVfJ8/mqdefault.jpg" alt="stats"></p>
+
+_But if you are asking about the value of x, it is 5 without any math because it is a **Pythagorean Triples**._
 
 ## Filosophy
 
