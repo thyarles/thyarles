@@ -19,13 +19,13 @@ sequenceDiagram
     Problem->>Study: The problem is a peace of cake?
     Study->>Solution: Yeap, solve it!
     loop study more
-        Study->>Solution: Nope, you need to study more!
+        Solution-->>Study: Nope, you need to study more!
     end
     Note left of Solution: Remember: never give up!
-    Solution-->>Study: You beat me!
+    Solution->>Study: You beat me!
     Study-->>Problem: Save knowledge for the next one?
-    Problem->>Study: For sure!
-    Study-->>Problem: Next problem, please.
+    Problem-->>Study: For sure!
+    Study->>Problem: Next problem, please.
 ```
 
 ##
