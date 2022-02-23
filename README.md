@@ -10,7 +10,7 @@ Yeah, a simple introduction because simplicity worths a lot to me! If you want t
 
 <p align="center"><img src="https://i.ytimg.com/vi/bj-LMniVfJ8/mqdefault.jpg" alt="stats"></p>
 
-_But if you are asking about the value of x, it is 5 without any math because it is a **Pythagorean Triples**._
+_But if you are asking about the value of x, it is 5 cm without any math because it is a **Pythagorean Triples**._
 
 ## Filosophy
 
