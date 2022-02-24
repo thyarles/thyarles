@@ -17,17 +17,12 @@ _But if you are asking about the value of x, it is 5 cm without any math because
 ```mermaid
 sequenceDiagram
     participant Problem
-    participant Study
-    Problem->>Study: The problem is a peace of cake?
-    Study->>Solution: Yeap, solve it!
+    Problem->>Solution: The problem is a peace of cake
+    Solution-->>Problem: Solve it and go to the next
+    Problem->>Solution: The problem is hard to solve
     loop study more
-        Solution-->>Study: Nope, you need to study more!
+        Solution-->>Problem: Study until it be a peace of cake!
     end
-    Note left of Solution: Remember: never give up!
-    Solution->>Study: You beat me!
-    Study-->>Problem: Save knowledge for the next one?
-    Problem-->>Study: For sure!
-    Study->>Problem: Next problem, please.
 ```
 
 ##
