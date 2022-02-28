@@ -4,7 +4,7 @@
 
 I'm a **Computer Engineer**, MSc in **Mecatronic Engineering**, and majoring again in **Statistcs**.
 I still have time for fun because my job is my best hobby, so **I have fun everyday**! How can I be more happier?
-Yeah, a simple introduction because simplicity worths a lot to me! If you want to known me a little better, reach me out on [Linkedin](https://www.linkedin.com/in/thyarles) or [Credly](https://www.credly.com/users/thyarles/badges).
+Yeah, a simple introduction because simplicity worths a lot to me! If you want to known me a little better, reach me out on [Linkedin](https://www.linkedin.com/in/thyarles) and [Credly](https://www.credly.com/users/thyarles/badges).
   
 ## A little about my dutties  
 
