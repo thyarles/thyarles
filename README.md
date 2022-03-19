@@ -6,10 +6,3 @@ I'm a **Computer Engineer**, MSc in **Mecatronic Engineering**, and majoring aga
 I still have time for fun because work a hobby to me, so **I have fun everyday**! How can I be more happier?
 Yeah, a simple introduction because simplicity worths a lot to me! Want to known me a little better? Reach me out on [Linkedin](https://www.linkedin.com/in/thyarles) and [Credly](https://www.credly.com/users/thyarles/badges).
   
-## A little about my mind
-
-<p align="center"><img src="https://i.ytimg.com/vi/bj-LMniVfJ8/mqdefault.jpg" alt="stats"></p>
-
-But if you are asking about the value of `x`, it is `5 cm` without any math because it is related to the **pythagorean triples**. 
-
-Wrapping up, give me the right question to receive the right answer.
