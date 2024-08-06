@@ -25,13 +25,13 @@ jobs:
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
-          message: Adding to JSON stats
+          message: Adding SF1 JSON stats
           add: 'json/SF1/*.json'
 
       - name: Get CD1
         run: |
           H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
-          P='1023891-47.2023.4.01.3400'
+          P='1026558-69.2024.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='CD1'
           curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
@@ -41,7 +41,7 @@ jobs:
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
-          message: Adding to JSON stats
+          message: Adding CD1 JSON stats
           add: 'json/CD1/*.json'      
 
       - name: Get CD2
@@ -57,7 +57,7 @@ jobs:
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
-          message: Adding to JSON stats
+          message: Adding CD2 JSON stats
           add: 'json/CD2/*.json'      
 
       - name: Get CR1
@@ -73,6 +73,6 @@ jobs:
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
-          message: Adding to JSON stats
+          message: Adding CR1 JSON stats
           add: 'json/CR1/*.json'      
           
