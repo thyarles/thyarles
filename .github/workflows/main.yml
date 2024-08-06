@@ -12,9 +12,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      #- name: Install dependencies
-      #  run: apt install -y curl jq
-
       - name: Get JSON
         run: curl -s https://sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo/1023891-47.2023.4.01.3400\?ordem\=1\&max\=10\&offset\=0 | jq > json/$GITHUB_RUN_ID.json
 
@@ -23,5 +20,5 @@ jobs:
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
-          message: Adding $GITHUB_RUN_ID to JSON stats
+          message: Adding to JSON stats
           add: 'json/*.json'
