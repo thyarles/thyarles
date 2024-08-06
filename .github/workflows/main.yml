@@ -12,13 +12,67 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Get JSON
-        run: curl -s https://sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo/1023891-47.2023.4.01.3400\?ordem\=1\&max\=10\&offset\=0 | jq > json/$GITHUB_RUN_ID.json
+      - name: Get SF1
+        run: |
+          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+          P='1023891-47.2023.4.01.3400'
+          T='ordem=1&max=10&offset=0'
+          F='SF1'
+          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
 
-      - name: Commit changes
+      - name: Commit SF1
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Charles Santos
           author_email: thyarles@gmail.com
           message: Adding to JSON stats
-          add: 'json/*.json'
+          add: 'json/SF1/*.json'
+
+      - name: Get CD1
+        run: |
+          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+          P='1023891-47.2023.4.01.3400'
+          T='ordem=1&max=10&offset=0'
+          F='CD1'
+          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
+
+      - name: Commit CD1
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Charles Santos
+          author_email: thyarles@gmail.com
+          message: Adding to JSON stats
+          add: 'json/CD1/*.json'      
+
+      - name: Get CD2
+        run: |
+          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+          P='1016661-32.2024.4.01.0000'
+          T='ordem=1&max=10&offset=0'
+          F='CD2'
+          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
+
+      - name: Commit CD2
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Charles Santos
+          author_email: thyarles@gmail.com
+          message: Adding to JSON stats
+          add: 'json/CD2/*.json'      
+
+      - name: Get CR1
+        run: |
+          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+          P='1016674-55.2020.4.01.3400'
+          T='ordem=1&max=10&offset=0'
+          F='CR1'
+          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
+
+      - name: Commit CR1
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Charles Santos
+          author_email: thyarles@gmail.com
+          message: Adding to JSON stats
+          add: 'json/CR1/*.json'      
+          
