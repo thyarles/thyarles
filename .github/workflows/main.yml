@@ -1,0 +1,27 @@
+name: Update JSON stats
+on:
+  schedule:
+    - cron: '11 11 * * *'
+  workflow_dispatch:
+  
+jobs:
+  run:
+    name: Get JSON and update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: apt install -y curl jq
+
+      - name: Get JSON
+        run: curl -s https://sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo/1023891-47.2023.4.01.3400\?ordem\=1\&max\=10\&offset\=0 | jq > json/$GITHUB_RUN_ID.json
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Charles Santos
+          author_email: thyarles@gmail.com
+          message: Adding $GITHUB_RUN_ID to JSON stats
+          add: 'json/*.json'
