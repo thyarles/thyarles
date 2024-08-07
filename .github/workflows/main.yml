@@ -44,35 +44,35 @@ jobs:
           message: Adding CD1 JSON stats
           add: 'json/CD1/*.json'      
 
-      - name: Get CD2
-        run: |
-          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
-          P='1016661-32.2024.4.01.0000'
-          T='ordem=1&max=10&offset=0'
-          F='CD2'
-          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
+      # - name: Get CD2
+      #   run: |
+      #     H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+      #     P='1016661-32.2024.4.01.0000'
+      #     T='ordem=1&max=10&offset=0'
+      #     F='CD2'
+      #     curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
 
-      - name: Commit CD2
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Charles Santos
-          author_email: thyarles@gmail.com
-          message: Adding CD2 JSON stats
-          add: 'json/CD2/*.json'      
+      # - name: Commit CD2
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     author_name: Charles Santos
+      #     author_email: thyarles@gmail.com
+      #     message: Adding CD2 JSON stats
+      #     add: 'json/CD2/*.json'      
 
-      - name: Get CR1
-        run: |
-          H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
-          P='1016674-55.2020.4.01.3400'
-          T='ordem=1&max=10&offset=0'
-          F='CR1'
-          curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
+      # - name: Get CR1
+      #   run: |
+      #     H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+      #     P='1016674-55.2020.4.01.3400'
+      #     T='ordem=1&max=10&offset=0'
+      #     F='CR1'
+      #     curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
 
-      - name: Commit CR1
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: Charles Santos
-          author_email: thyarles@gmail.com
-          message: Adding CR1 JSON stats
-          add: 'json/CR1/*.json'      
+      # - name: Commit CR1
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     author_name: Charles Santos
+      #     author_email: thyarles@gmail.com
+      #     message: Adding CR1 JSON stats
+      #     add: 'json/CR1/*.json'      
           
