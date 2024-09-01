@@ -1,6 +1,6 @@
 ## Hey there!
 
-🎓 I hold a degree in **Computer Engineering**, an MSc in **Mechatronic Engineering**, and have completed 50% of a major in **Statistics**. Currently, I am pursuing a **PhD in IT**.
+🎓 I hold a degree in **Computer Engineering**, an MSc in **Mechatronic Engineering**, and have completed 50% of a major in **Statistics**. Currently, I am pursuing a **PhD in Informatics**.
 
 😄 But don’t worry, my life isn’t all algorithms and data sets. **Working with IT is like my ultimate hobby**, so I’m having a blast every day! How can I crank up the happiness dial even more? That’s the million-dollar question!
 
