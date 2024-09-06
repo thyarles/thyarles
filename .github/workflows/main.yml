@@ -37,7 +37,7 @@ jobs:
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
-          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo {} > "json/$F/$GITHUB_RUN_ID.json"
+          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
       - name: Commit SF1
@@ -72,7 +72,7 @@ jobs:
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
-          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo {} > "json/$F/$GITHUB_RUN_ID.json"
+          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
       - name: Commit CD1
