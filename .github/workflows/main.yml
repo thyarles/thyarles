@@ -1,13 +1,14 @@
 name: Update JSON stats
 on:
   schedule:
-    - cron: '11 11 * * *'
+    - cron: '15 02 * * *'
   workflow_dispatch:
   
 jobs:
   run:
     name: Get JSON and update
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -35,7 +36,9 @@ jobs:
           -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
-          -H 'sec-ch-ua-platform: "macOS"' | jq > "json/$F/$GITHUB_RUN_ID.json"
+          -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
+          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo {} > "json/$F/$GITHUB_RUN_ID.json"
+          cat "$F.json"
 
       - name: Commit SF1
         uses: EndBug/add-and-commit@v9
@@ -68,7 +71,9 @@ jobs:
           -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
-          -H 'sec-ch-ua-platform: "macOS"' | jq > "json/$F/$GITHUB_RUN_ID.json"
+          -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
+          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo {} > "json/$F/$GITHUB_RUN_ID.json"
+          cat "$F.json"
 
       - name: Commit CD1
         uses: EndBug/add-and-commit@v9
@@ -78,35 +83,7 @@ jobs:
           message: Adding CD1 JSON stats
           add: 'json/CD1/*.json'      
 
-      # - name: Get CD2
-      #   run: |
-      #     H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
-      #     P='1016661-32.2024.4.01.0000'
-      #     T='ordem=1&max=10&offset=0'
-      #     F='CD2'
-      #     curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
-
-      # - name: Commit CD2
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     author_name: Charles Santos
-      #     author_email: thyarles@gmail.com
-      #     message: Adding CD2 JSON stats
-      #     add: 'json/CD2/*.json'      
-
-      # - name: Get CR1
-      #   run: |
-      #     H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
-      #     P='1016674-55.2020.4.01.3400'
-      #     T='ordem=1&max=10&offset=0'
-      #     F='CR1'
-      #     curl -s "https://$H/$P?$T" | jq > json/$F/$GITHUB_RUN_ID.json
-
-      # - name: Commit CR1
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     author_name: Charles Santos
-      #     author_email: thyarles@gmail.com
-      #     message: Adding CR1 JSON stats
-      #     add: 'json/CR1/*.json'      
-          
+      - name: Send error
+        run: |
+          jq . SF1.json
+          jq . CD1.json
