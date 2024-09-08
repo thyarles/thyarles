@@ -33,7 +33,7 @@ jobs:
           -H 'Sec-Fetch-User: ?1' \
           -H 'Sec-GPC: 1' \
           -H 'Upgrade-Insecure-Requests: 1' \
-          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \
+          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$GITHUB_RUN_ID.0.0.0 Safari/537.36' \
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
@@ -68,7 +68,7 @@ jobs:
           -H 'Sec-Fetch-User: ?1' \
           -H 'Sec-GPC: 1' \
           -H 'Upgrade-Insecure-Requests: 1' \
-          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' \
+          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$GITHUB_RUN_ID.0.0.0 Safari/537.36' \
           -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
