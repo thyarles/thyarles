@@ -1,0 +1,36 @@
+{
+  "processos": [
+    {
+      "numeroFormatado": "1023891-47.2023.4.01.3400",
+      "ordem": 825,
+      "orgao": {
+        "id": 188,
+        "vara": 2,
+        "codigoSecao": 3400,
+        "orgaoJulgadorPJE1G": 19,
+        "orgaoJulgadorPJE2G": null,
+        "ordem": 3400002,
+        "ordemPrincipal": 3400002,
+        "grau": "1º Grau",
+        "juizo": "Vara Federal",
+        "estado": "Distrito Federal",
+        "uf": "DF",
+        "secao": "Seção Judiciária do Distrito Federal",
+        "siglaSecao": "JFDF",
+        "descricaoOrgaoJulgador": "02ª - Brasília",
+        "descricaoOrgaoJulgadorPrincipal": "02ª - Brasília",
+        "especializacaoPadrao": "CÍVEL",
+        "carga": 1734404400000
+      },
+      "uf": "DF",
+      "prioridade": null,
+      "primeiraDistribuicao": 1679540400000,
+      "classe": "PROCEDIMENTO COMUM CÍVEL",
+      "tipoJuiz": null,
+      "dataInformacao": 1734404400000,
+      "primeiraConclusao": 1721790000000,
+      "dataDistribuicao": 1679540400000
+    }
+  ],
+  "totalLista": 1
+}
