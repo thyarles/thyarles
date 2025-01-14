@@ -24,7 +24,7 @@ jobs:
           -H 'Accept-Language: en;q=0.9' \
           -H 'Cache-Control: no-cache' \
           -H 'Connection: keep-alive' \
-          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP' \
+          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP'; TRF1_CHECK=$((1000000 + $RANDOM % 123456)) \
           -H 'DNT: 1' \
           -H 'Pragma: no-cache' \
           -H 'Sec-Fetch-Dest: document' \
@@ -33,8 +33,8 @@ jobs:
           -H 'Sec-Fetch-User: ?1' \
           -H 'Sec-GPC: 1' \
           -H 'Upgrade-Insecure-Requests: 1' \
-          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 28)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
-          -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
+          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 31)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
+          -H 'sec-ch-ua: "Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
@@ -59,7 +59,7 @@ jobs:
           -H 'Accept-Language: en;q=0.9' \
           -H 'Cache-Control: no-cache' \
           -H 'Connection: keep-alive' \
-          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP' \
+          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP'; TRF1_CHECK=$((1000000 + $RANDOM % 123456)) \
           -H 'DNT: 1' \
           -H 'Pragma: no-cache' \
           -H 'Sec-Fetch-Dest: document' \
@@ -68,12 +68,13 @@ jobs:
           -H 'Sec-Fetch-User: ?1' \
           -H 'Sec-GPC: 1' \
           -H 'Upgrade-Insecure-Requests: 1' \
-          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 28)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
-          -H 'sec-ch-ua: "Chromium";v="128", "Not;A=Brand";v="24", "Brave";v="128"' \
+          -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 31)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
+          -H 'sec-ch-ua: "Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
           -H 'sec-ch-ua-mobile: ?0' \
           -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
+
 
       - name: Commit CD1
         uses: EndBug/add-and-commit@v9
