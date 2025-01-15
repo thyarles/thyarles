@@ -24,7 +24,7 @@ jobs:
           -H 'Accept-Language: en;q=0.9' \
           -H 'Cache-Control: no-cache' \
           -H 'Connection: keep-alive' \
-          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP'; TRF1_CHECK=$((1000000 + $RANDOM % 123456)) \
+          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP; TRF1_CHECK=$((1000000 + $RANDOM % 123456))' \
           -H 'DNT: 1' \
           -H 'Pragma: no-cache' \
           -H 'Sec-Fetch-Dest: document' \
@@ -59,7 +59,7 @@ jobs:
           -H 'Accept-Language: en;q=0.9' \
           -H 'Cache-Control: no-cache' \
           -H 'Connection: keep-alive' \
-          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP'; TRF1_CHECK=$((1000000 + $RANDOM % 123456)) \
+          -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP; TRF1_CHECK=$((1000000 + $RANDOM % 123456))' \
           -H 'DNT: 1' \
           -H 'Pragma: no-cache' \
           -H 'Sec-Fetch-Dest: document' \
