@@ -1,13 +1,13 @@
 name: Update JSON stats
 on:
   schedule:
-    - cron: '15 02 * * *'
+    - cron: '03 07 * * *'
   workflow_dispatch:
   
 jobs:
   run:
     name: Get JSON and update
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     timeout-minutes: 5
     steps:
       - name: Checkout repo
