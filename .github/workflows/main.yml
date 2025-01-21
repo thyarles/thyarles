@@ -19,24 +19,24 @@ jobs:
           P='1023891-47.2023.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='SF1'
-          curl -s "https://$H/$P?$T" --output "$F.json"
-          # -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
-          # -H 'Accept-Language: en;q=0.9' \
-          # -H 'Cache-Control: no-cache' \
-          # -H 'Connection: keep-alive' \
-          # -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP; TRF1_CHECK=$((1000000 + $RANDOM % 123456))' \
-          # -H 'DNT: 1' \
-          # -H 'Pragma: no-cache' \
-          # -H 'Sec-Fetch-Dest: document' \
-          # -H 'Sec-Fetch-Mode: navigate' \
-          # -H 'Sec-Fetch-Site: none' \
-          # -H 'Sec-Fetch-User: ?1' \
-          # -H 'Sec-GPC: 1' \
-          # -H 'Upgrade-Insecure-Requests: 1' \
-          # -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 31)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
-          # -H 'sec-ch-ua: "Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
-          # -H 'sec-ch-ua-mobile: ?0' \
-          # -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
+          curl -s "https://$H/$P?$T" \
+          -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+          -H 'accept-language: en;q=0.6' \
+          -H 'cache-control: no-cache' \
+          -H 'dnt: 1' \
+          -H 'pragma: no-cache' \
+          -H 'priority: u=0, i' \
+          -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
+          -H 'sec-ch-ua-mobile: ?0' \
+          -H 'sec-ch-ua-platform: "Windows"' \
+          -H 'sec-fetch-dest: document' \
+          -H 'sec-fetch-mode: navigate' \
+          -H 'sec-fetch-site: none' \
+          -H 'sec-fetch-user: ?1' \
+          -H 'sec-gpc: 1' \
+          -H 'upgrade-insecure-requests: 1' \
+          -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
+          --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
@@ -54,24 +54,24 @@ jobs:
           P='1026558-69.2024.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='CD1'
-          curl -s "https://$H/$P?$T" --output "$F.json"
-          # -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
-          # -H 'Accept-Language: en;q=0.9' \
-          # -H 'Cache-Control: no-cache' \
-          # -H 'Connection: keep-alive' \
-          # -H 'Cookie: SISTEMAS-47873-SG_PGP_API_8080_TCP=FFABBAKMJABP; SISTEMAS-47873-SG_ORDEMCRONOLOGICA_8080_TCP=EGACBAKMJABP; TRF1_CHECK=$((1000000 + $RANDOM % 123456))' \
-          # -H 'DNT: 1' \
-          # -H 'Pragma: no-cache' \
-          # -H 'Sec-Fetch-Dest: document' \
-          # -H 'Sec-Fetch-Mode: navigate' \
-          # -H 'Sec-Fetch-Site: none' \
-          # -H 'Sec-Fetch-User: ?1' \
-          # -H 'Sec-GPC: 1' \
-          # -H 'Upgrade-Insecure-Requests: 1' \
-          # -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 31)).$(($RANDOM % 9)).$(($RANDOM % 9)).$(($RANDOM % 9)) Safari/537.36' \
-          # -H 'sec-ch-ua: "Brave";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
-          # -H 'sec-ch-ua-mobile: ?0' \
-          # -H 'sec-ch-ua-platform: "macOS"' --output "$F.json"
+          curl -s "https://$H/$P?$T" \
+          -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+          -H 'accept-language: en;q=0.6' \
+          -H 'cache-control: no-cache' \
+          -H 'dnt: 1' \
+          -H 'pragma: no-cache' \
+          -H 'priority: u=0, i' \
+          -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
+          -H 'sec-ch-ua-mobile: ?0' \
+          -H 'sec-ch-ua-platform: "Windows"' \
+          -H 'sec-fetch-dest: document' \
+          -H 'sec-fetch-mode: navigate' \
+          -H 'sec-fetch-site: none' \
+          -H 'sec-fetch-user: ?1' \
+          -H 'sec-gpc: 1' \
+          -H 'upgrade-insecure-requests: 1' \
+          -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
+          --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
