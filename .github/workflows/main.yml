@@ -19,7 +19,7 @@ jobs:
           P='1023891-47.2023.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='SF1'
-          curl -s "https://$H/$P?$T" \
+          curl -s "https://$H/$P?$T" > "$F.json"
           # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
           # -H 'accept-language: en;q=0.6' \
           # -H 'cache-control: no-cache' \
@@ -36,7 +36,7 @@ jobs:
           # -H 'sec-gpc: 1' \
           # -H 'upgrade-insecure-requests: 1' \
           # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
-          --output "$F.json"
+          # --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
@@ -54,7 +54,7 @@ jobs:
           P='1026558-69.2024.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='CD1'
-          curl -s "https://$H/$P?$T" \
+          curl -s "https://$H/$P?$T" --output "$F.json"
           # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
           # -H 'accept-language: en;q=0.6' \
           # -H 'cache-control: no-cache' \
@@ -71,10 +71,9 @@ jobs:
           # -H 'sec-gpc: 1' \
           # -H 'upgrade-insecure-requests: 1' \
           # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
-          --output "$F.json"
+          # --output "$F.json"
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
-
 
       - name: Commit CD1
         uses: EndBug/add-and-commit@v9
