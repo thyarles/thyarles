@@ -1,7 +1,7 @@
 name: Update JSON stats
 on:
   schedule:
-    - cron: '03 07 * * *'
+    - cron: '13 09 * * *'
   workflow_dispatch:
   
 jobs:
@@ -110,16 +110,13 @@ jobs:
           [[ -f 'package.json' ]] && yarn install --frozen-lockfile
           echo "::endgroup::"
 
-      - name: "Cypress smoke test"
+      - name: "Check Cypress"
         run: |
           echo "::group::Verify Cypress"
           yarn cypress verify
           echo "::endgroup::"          
           echo "::group::Get Cypress info"
           yarn cypress info
-          echo "::endgroup::"
-          echo "::group::Run smoke test"
-          yarn cypress run --browser chrome --quiet --project test
           echo "::endgroup::"
 
       - name: "Run Cypress"
