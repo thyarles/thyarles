@@ -5,39 +5,146 @@ on:
   workflow_dispatch:
   
 jobs:
-  run:
-    name: Get JSON and update
-    runs-on: ubuntu-20.04
-    timeout-minutes: 5
+  # run:
+  #   name: Get JSON and update
+  #   runs-on: ubuntu-20.04
+  #   timeout-minutes: 5
+  #   steps:
+  #     - name: Checkout repo
+  #       uses: actions/checkout@v4
+
+  #     - name: Get SF1
+  #       run: |
+  #         H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+  #         P='1023891-47.2023.4.01.3400'
+  #         T='ordem=1&max=10&offset=0'
+  #         F='SF1'
+  #         curl -s "https://$H/$P?$T" > "$F.json"
+  #         # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+  #         # -H 'accept-language: en;q=0.6' \
+  #         # -H 'cache-control: no-cache' \
+  #         # -H 'dnt: 1' \
+  #         # -H 'pragma: no-cache' \
+  #         # -H 'priority: u=0, i' \
+  #         # -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
+  #         # -H 'sec-ch-ua-mobile: ?0' \
+  #         # -H 'sec-ch-ua-platform: "Windows"' \
+  #         # -H 'sec-fetch-dest: document' \
+  #         # -H 'sec-fetch-mode: navigate' \
+  #         # -H 'sec-fetch-site: none' \
+  #         # -H 'sec-fetch-user: ?1' \
+  #         # -H 'sec-gpc: 1' \
+  #         # -H 'upgrade-insecure-requests: 1' \
+  #         # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
+  #         # --output "$F.json"
+  #         jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
+  #         cat "$F.json"
+
+  #     - name: Commit SF1
+  #       uses: EndBug/add-and-commit@v9
+  #       with:
+  #         author_name: Charles Santos
+  #         author_email: thyarles@gmail.com
+  #         message: Adding SF1 JSON stats
+  #         add: 'json/SF1/*.json'
+
+  #     - name: Get CD1
+  #       run: |
+  #         H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
+  #         P='1026558-69.2024.4.01.3400'
+  #         T='ordem=1&max=10&offset=0'
+  #         F='CD1'
+  #         curl -s "https://$H/$P?$T" --output "$F.json"
+  #         # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
+  #         # -H 'accept-language: en;q=0.6' \
+  #         # -H 'cache-control: no-cache' \
+  #         # -H 'dnt: 1' \
+  #         # -H 'pragma: no-cache' \
+  #         # -H 'priority: u=0, i' \
+  #         # -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
+  #         # -H 'sec-ch-ua-mobile: ?0' \
+  #         # -H 'sec-ch-ua-platform: "Windows"' \
+  #         # -H 'sec-fetch-dest: document' \
+  #         # -H 'sec-fetch-mode: navigate' \
+  #         # -H 'sec-fetch-site: none' \
+  #         # -H 'sec-fetch-user: ?1' \
+  #         # -H 'sec-gpc: 1' \
+  #         # -H 'upgrade-insecure-requests: 1' \
+  #         # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
+  #         # --output "$F.json"
+  #         jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
+  #         cat "$F.json"
+
+  #     - name: Commit CD1
+  #       uses: EndBug/add-and-commit@v9
+  #       with:
+  #         author_name: Charles Santos
+  #         author_email: thyarles@gmail.com
+  #         message: Adding CD1 JSON stats
+  #         add: 'json/CD1/*.json'      
+
+  #     - name: Send error
+  #       run: |
+  #         jq . SF1.json
+  #         jq . CD1.json
+  cypress:
+    name: 'E2E'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: ${{ github.workflow }}
     steps:
-      - name: Checkout repo
+      - name: "Checkout"
         uses: actions/checkout@v4
 
-      - name: Get SF1
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          cache-dependency-path: "yarn.lock"
+        continue-on-error: true
+
+      - name: "Install packages"
+        run: |
+          echo "::group::Install root packages"
+          [[ -f 'package.json' ]] && yarn install --frozen-lockfile
+          echo "::endgroup::"
+
+      - name: "Cypress smoke test"
+        run: |
+          echo "::group::Verify Cypress"
+          yarn cypress verify
+          echo "::endgroup::"          
+          echo "::group::Get Cypress info"
+          yarn cypress info
+          echo "::endgroup::"
+          echo "::group::Run smoke test"
+          yarn cypress run --browser chrome --quiet --project test
+          echo "::endgroup::"
+        working-directory: cy-runner
+
+      - name: "Run Cypress"
+        run: yarn cypress run        
+
+      - name: "Save artifacts"
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress
+          path: |
+            cypress/fixtures
+            cypress/screenshots
+          retention-days: 3
+        continue-on-error: true
+
+      - name: Check SF1
         run: |
           H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
           P='1023891-47.2023.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='SF1'
-          curl -s "https://$H/$P?$T" > "$F.json"
-          # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
-          # -H 'accept-language: en;q=0.6' \
-          # -H 'cache-control: no-cache' \
-          # -H 'dnt: 1' \
-          # -H 'pragma: no-cache' \
-          # -H 'priority: u=0, i' \
-          # -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
-          # -H 'sec-ch-ua-mobile: ?0' \
-          # -H 'sec-ch-ua-platform: "Windows"' \
-          # -H 'sec-fetch-dest: document' \
-          # -H 'sec-fetch-mode: navigate' \
-          # -H 'sec-fetch-site: none' \
-          # -H 'sec-fetch-user: ?1' \
-          # -H 'sec-gpc: 1' \
-          # -H 'upgrade-insecure-requests: 1' \
-          # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
-          # --output "$F.json"
-          jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
+          mkdir -p json/$F
+          jq . "cypress/fixtures/$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
       - name: Commit SF1
@@ -48,30 +155,13 @@ jobs:
           message: Adding SF1 JSON stats
           add: 'json/SF1/*.json'
 
-      - name: Get CD1
+      - name: Check CD1
         run: |
           H='sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo'
           P='1026558-69.2024.4.01.3400'
           T='ordem=1&max=10&offset=0'
           F='CD1'
-          curl -s "https://$H/$P?$T" --output "$F.json"
-          # -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
-          # -H 'accept-language: en;q=0.6' \
-          # -H 'cache-control: no-cache' \
-          # -H 'dnt: 1' \
-          # -H 'pragma: no-cache' \
-          # -H 'priority: u=0, i' \
-          # -H 'sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Brave";v="132"' \
-          # -H 'sec-ch-ua-mobile: ?0' \
-          # -H 'sec-ch-ua-platform: "Windows"' \
-          # -H 'sec-fetch-dest: document' \
-          # -H 'sec-fetch-mode: navigate' \
-          # -H 'sec-fetch-site: none' \
-          # -H 'sec-fetch-user: ?1' \
-          # -H 'sec-gpc: 1' \
-          # -H 'upgrade-insecure-requests: 1' \
-          # -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/$((100 + $RANDOM % 32)).0.0.0 Safari/$((500 + $RANDOM % 37)).36" \
-          # --output "$F.json"
+          mkdir -p json/$F
           jq . "$F.json" > "json/$F/$GITHUB_RUN_ID.json" || echo "curl -s https://$H/$P?$T | jq" > "json/$F/$GITHUB_RUN_ID.json"
           cat "$F.json"
 
@@ -85,5 +175,5 @@ jobs:
 
       - name: Send error
         run: |
-          jq . SF1.json
-          jq . CD1.json
+          jq . json/SF1.json
+          jq . json/CD1.json          
