@@ -7,7 +7,7 @@ on:
 jobs:
   run:
     name: Get JSON and update
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Checkout repo
