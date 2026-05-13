@@ -1,1 +1,0 @@
-curl -s https://sistemas.trf1.jus.br/pgp-api/api/local/JFDF/processo/1026558-69.2024.4.01.3400?ordem=1&max=10&offset=0 | jq
