@@ -6,7 +6,7 @@ Edit ART / INFO below and re-run:  python3 assets/make-neofetch.py
 import os
 
 from termsvg import (CYAN, GREEN, GREY, ORANGE, PINK, PURPLE, DIM,
-                     USER, prompt, render)
+                     USER, command_col, prompt, render)
 
 INFO_COL, KEY_W = 23, 11          # column grid, in characters
 
@@ -70,4 +70,4 @@ if __name__ == "__main__":
     render(rows,
            path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "neofetch.svg"),
            title=f"{USER} \u2014 neofetch",
-           cursor=(len(rows) - 1, len(USER) + 3))
+           cursor=(len(rows) - 1, command_col()))

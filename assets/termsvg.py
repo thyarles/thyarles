@@ -30,12 +30,21 @@ FONT = ('ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, '
 USER = "charles.santos@t7"
 
 
+def command_col(col=0):
+    """Column just after the prompt, with one space of gap.
+
+    Both the typed command and the blinking cursor sit here, so the cursor
+    never ends up glued to the "$".
+    """
+    return col + len(USER) + 4
+
+
 def prompt(command=None, col=0):
     """The PS1, optionally followed by a command, as positioned runs."""
     runs = [(col, USER, GREEN), (col + len(USER), ":", GREY),
             (col + len(USER) + 1, "~", ORANGE), (col + len(USER) + 2, "$", GREY)]
     if command:
-        runs.append((col + len(USER) + 4, command, GREY))
+        runs.append((command_col(col), command, GREY))
     return runs
 
 

@@ -20,7 +20,7 @@ import urllib.error
 import urllib.request
 from datetime import date
 
-from termsvg import CYAN, DIM, GREEN, GREY, ORANGE, PURPLE, USER, Bar, prompt, render
+from termsvg import CYAN, DIM, GREEN, GREY, ORANGE, PURPLE, USER, Bar, command_col, prompt, render
 
 LOGIN = "thyarles"
 CR = f"https://api.codersrank.io/v2/users/{LOGIN}"
@@ -161,5 +161,5 @@ if __name__ == "__main__":
     render(rows,
            path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "stats.svg"),
            title=f"{USER} — btop",
-           cursor=(len(rows) - 1, len(USER) + 3),
+           cursor=(len(rows) - 1, command_col()),
            min_cols=CARD_COLS)

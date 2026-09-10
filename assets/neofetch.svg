@@ -61,5 +61,5 @@
 <text xml:space="preserve" x="164.8" y="484.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">:</text>
 <text xml:space="preserve" x="173.2" y="484.0" fill="#d08010" textLength="8.4" lengthAdjust="spacingAndGlyphs">~</text>
 <text xml:space="preserve" x="181.6" y="484.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">$</text>
-<rect x="190.0" y="473.0" width="8.4" height="16" fill="#23e298"><animate attributeName="opacity" values="1;1;0;0" dur="1.06s" repeatCount="indefinite"/></rect>
+<rect x="198.4" y="473.0" width="8.4" height="16" fill="#23e298"><animate attributeName="opacity" values="1;1;0;0" dur="1.06s" repeatCount="indefinite"/></rect>
 </svg>
