@@ -49,6 +49,8 @@ width="691" />
 <a href="https://www.credly.com/badges/3af4a40a-4ea7-43b3-ba48-2de1849f27f3"><img src="https://img.shields.io/badge/CKS-Security_Specialist-23E298?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1B1D1E" alt="CKS" /></a>
 <a href="https://www.credly.com/badges/9dd468c6-4baf-4c56-88c5-a4a2b61efbbb"><img src="https://img.shields.io/badge/CKA-Administrator-23E298?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1B1D1E" alt="CKA" /></a>
 <a href="https://www.credly.com/badges/b7a8c8bd-92ad-4944-bbb2-bf07cf417a3e"><img src="https://img.shields.io/badge/CKAD-App_Developer-23E298?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1B1D1E" alt="CKAD" /></a>
+</p>
+<p>
 <a href="https://www.credly.com/badges/32ac2769-4cb6-47aa-a1e5-6ac923101e22"><img src="https://img.shields.io/badge/LFCE-Engineer-D08010?style=for-the-badge&logo=linux&logoColor=white&labelColor=1B1D1E" alt="LFCE" /></a>
 <a href="https://www.credly.com/badges/9ce3809f-b641-48ca-8b5f-23006664dd67"><img src="https://img.shields.io/badge/LFCS-SysAdmin-D08010?style=for-the-badge&logo=linux&logoColor=white&labelColor=1B1D1E" alt="LFCS" /></a><br><br>
 </p>
