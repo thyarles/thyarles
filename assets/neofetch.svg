@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="691" height="500" viewBox="0 0 691 500" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace" font-size="14" role="img" aria-label="charles.santos@t7 — neofetch">
+<rect width="691" height="500" rx="8" fill="#0d0f10" stroke="#2b2e30"/>
+<path d="M0 8a8 8 0 0 1 8-8h675a8 8 0 0 1 8 8v26H0z" fill="#1b1d1e"/>
+<line x1="0" y1="34.0" x2="691" y2="34.0" stroke="#2b2e30"/>
+<circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+<circle cx="40" cy="17" r="6" fill="#febc2e"/>
+<circle cx="58" cy="17" r="6" fill="#28c840"/>
+<text x="345" y="21" fill="#6f7275" font-size="12" text-anchor="middle">charles.santos@t7 — neofetch</text>
+<text xml:space="preserve" x="22.0" y="64.0" fill="#23e298" textLength="142.8" lengthAdjust="spacingAndGlyphs">charles.santos@t7</text>
+<text xml:space="preserve" x="164.8" y="64.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">:</text>
+<text xml:space="preserve" x="173.2" y="64.0" fill="#d08010" textLength="8.4" lengthAdjust="spacingAndGlyphs">~</text>
+<text xml:space="preserve" x="181.6" y="64.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">$</text>
+<text xml:space="preserve" x="198.4" y="64.0" fill="#bbbbbb" textLength="67.2" lengthAdjust="spacingAndGlyphs">neofetch</text>
+<text xml:space="preserve" x="89.2" y="104.0" fill="#d08010" textLength="33.6" lengthAdjust="spacingAndGlyphs">.--.</text>
+<text xml:space="preserve" x="215.2" y="104.0" fill="#23e298" textLength="142.8" lengthAdjust="spacingAndGlyphs">charles.santos@t7</text>
+<text xml:space="preserve" x="80.8" y="124.0" fill="#d08010" textLength="50.4" lengthAdjust="spacingAndGlyphs">|o_o |</text>
+<text xml:space="preserve" x="215.2" y="124.0" fill="#6f7275" textLength="142.8" lengthAdjust="spacingAndGlyphs">-----------------</text>
+<text xml:space="preserve" x="80.8" y="144.0" fill="#d08010" textLength="50.4" lengthAdjust="spacingAndGlyphs">|:_/ |</text>
+<text xml:space="preserve" x="215.2" y="144.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">OS         </text>
+<text xml:space="preserve" x="307.6" y="144.0" fill="#bbbbbb" textLength="336.0" lengthAdjust="spacingAndGlyphs">Linux — any distro that gives me a shell</text>
+<text xml:space="preserve" x="72.4" y="164.0" fill="#d08010" textLength="67.2" lengthAdjust="spacingAndGlyphs">//   \ \</text>
+<text xml:space="preserve" x="215.2" y="164.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Host       </text>
+<text xml:space="preserve" x="307.6" y="164.0" fill="#bbbbbb" textLength="184.8" lengthAdjust="spacingAndGlyphs">Brasília · DF · Brazil</text>
+<text xml:space="preserve" x="64.0" y="184.0" fill="#d08010" textLength="84.0" lengthAdjust="spacingAndGlyphs">(|     | )</text>
+<text xml:space="preserve" x="215.2" y="184.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Uptime     </text>
+<text xml:space="preserve" x="307.6" y="184.0" fill="#bbbbbb" textLength="336.0" lengthAdjust="spacingAndGlyphs">30+ years in tech, first login at age 11</text>
+<text xml:space="preserve" x="55.6" y="204.0" fill="#d08010" textLength="92.4" lengthAdjust="spacingAndGlyphs">/'\_   _/`\</text>
+<text xml:space="preserve" x="215.2" y="204.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Shell      </text>
+<text xml:space="preserve" x="307.6" y="204.0" fill="#bbbbbb" textLength="310.8" lengthAdjust="spacingAndGlyphs">bash 5.2 (vim keybindings, obviously)</text>
+<text xml:space="preserve" x="55.6" y="224.0" fill="#d08010" textLength="92.4" lengthAdjust="spacingAndGlyphs">\___)=(___/</text>
+<text xml:space="preserve" x="215.2" y="224.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">WM         </text>
+<text xml:space="preserve" x="307.6" y="224.0" fill="#bbbbbb" textLength="92.4" lengthAdjust="spacingAndGlyphs">Kubernetes </text>
+<text xml:space="preserve" x="400.0" y="224.0" fill="#ae81ff" textLength="151.2" lengthAdjust="spacingAndGlyphs">[CKS · CKA · CKAD]</text>
+<text xml:space="preserve" x="215.2" y="244.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Packages   </text>
+<text xml:space="preserve" x="307.6" y="244.0" fill="#bbbbbb" textLength="277.2" lengthAdjust="spacingAndGlyphs">5 Linux Foundation certifications</text>
+<text xml:space="preserve" x="215.2" y="264.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Kernel     </text>
+<text xml:space="preserve" x="307.6" y="264.0" fill="#bbbbbb" textLength="294.0" lengthAdjust="spacingAndGlyphs">BSc Computer Eng → MSc Mechatronics</text>
+<text xml:space="preserve" x="215.2" y="284.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Modules    </text>
+<text xml:space="preserve" x="307.6" y="284.0" fill="#bbbbbb" textLength="268.8" lengthAdjust="spacingAndGlyphs">Quantum Computing specialization</text>
+<text xml:space="preserve" x="215.2" y="304.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Process    </text>
+<text xml:space="preserve" x="307.6" y="304.0" fill="#bbbbbb" textLength="218.4" lengthAdjust="spacingAndGlyphs">PhD in Informatics @ UnB  </text>
+<text xml:space="preserve" x="526.0" y="304.0" fill="#23e298" textLength="75.6" lengthAdjust="spacingAndGlyphs">[running]</text>
+<text xml:space="preserve" x="215.2" y="324.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Stopped    </text>
+<text xml:space="preserve" x="307.6" y="324.0" fill="#bbbbbb" textLength="134.4" lengthAdjust="spacingAndGlyphs">BSc Statistics  </text>
+<text xml:space="preserve" x="442.0" y="324.0" fill="#f92672" textLength="126.0" lengthAdjust="spacingAndGlyphs">[50% · SIGSTOP]</text>
+<text xml:space="preserve" x="215.2" y="344.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Job 1      </text>
+<text xml:space="preserve" x="307.6" y="344.0" fill="#bbbbbb" textLength="210.0" lengthAdjust="spacingAndGlyphs">Infra &amp; DevOps Lead · MPT</text>
+<text xml:space="preserve" x="215.2" y="364.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Job 2      </text>
+<text xml:space="preserve" x="307.6" y="364.0" fill="#bbbbbb" textLength="361.2" lengthAdjust="spacingAndGlyphs">Innovation · Hadoop/Cloudera + private LLMs</text>
+<text xml:space="preserve" x="215.2" y="384.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">GPU        </text>
+<text xml:space="preserve" x="307.6" y="384.0" fill="#bbbbbb" textLength="159.6" lengthAdjust="spacingAndGlyphs">clustered NVIDIA → </text>
+<text xml:space="preserve" x="467.2" y="384.0" fill="#ae81ff" textLength="117.6" lengthAdjust="spacingAndGlyphs">smartlabbr.org</text>
+<text xml:space="preserve" x="215.2" y="404.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">History    </text>
+<text xml:space="preserve" x="307.6" y="404.0" fill="#bbbbbb" textLength="277.2" lengthAdjust="spacingAndGlyphs">VTEX (NYC HQ) 2021–2023 · QE Lead</text>
+<text xml:space="preserve" x="215.2" y="424.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Locale     </text>
+<text xml:space="preserve" x="307.6" y="424.0" fill="#bbbbbb" textLength="210.0" lengthAdjust="spacingAndGlyphs">pt_BR.UTF-8 · en_US.UTF-8</text>
+<text xml:space="preserve" x="215.2" y="444.0" fill="#66d9ef" textLength="92.4" lengthAdjust="spacingAndGlyphs">Battery    </text>
+<text xml:space="preserve" x="307.6" y="444.0" fill="#bbbbbb" textLength="75.6" lengthAdjust="spacingAndGlyphs">caffeine </text>
+<text xml:space="preserve" x="383.2" y="444.0" fill="#23e298" textLength="84.0" lengthAdjust="spacingAndGlyphs">[charging]</text>
+<text xml:space="preserve" x="22.0" y="484.0" fill="#23e298" textLength="142.8" lengthAdjust="spacingAndGlyphs">charles.santos@t7</text>
+<text xml:space="preserve" x="164.8" y="484.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">:</text>
+<text xml:space="preserve" x="173.2" y="484.0" fill="#d08010" textLength="8.4" lengthAdjust="spacingAndGlyphs">~</text>
+<text xml:space="preserve" x="181.6" y="484.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">$</text>
+<rect x="190.0" y="473.0" width="8.4" height="16" fill="#23e298"><animate attributeName="opacity" values="1;1;0;0" dur="1.06s" repeatCount="indefinite"/></rect>
+</svg>

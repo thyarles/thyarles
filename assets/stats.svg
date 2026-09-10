@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="691" height="420" viewBox="0 0 691 420" font-family="ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace" font-size="14" role="img" aria-label="charles.santos@t7 — btop">
+<rect width="691" height="420" rx="8" fill="#0d0f10" stroke="#2b2e30"/>
+<path d="M0 8a8 8 0 0 1 8-8h675a8 8 0 0 1 8 8v26H0z" fill="#1b1d1e"/>
+<line x1="0" y1="34.0" x2="691" y2="34.0" stroke="#2b2e30"/>
+<circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+<circle cx="40" cy="17" r="6" fill="#febc2e"/>
+<circle cx="58" cy="17" r="6" fill="#28c840"/>
+<text x="345" y="21" fill="#6f7275" font-size="12" text-anchor="middle">charles.santos@t7 — btop</text>
+<text xml:space="preserve" x="22.0" y="64.0" fill="#23e298" textLength="142.8" lengthAdjust="spacingAndGlyphs">charles.santos@t7</text>
+<text xml:space="preserve" x="164.8" y="64.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">:</text>
+<text xml:space="preserve" x="173.2" y="64.0" fill="#d08010" textLength="8.4" lengthAdjust="spacingAndGlyphs">~</text>
+<text xml:space="preserve" x="181.6" y="64.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">$</text>
+<text xml:space="preserve" x="198.4" y="64.0" fill="#bbbbbb" textLength="33.6" lengthAdjust="spacingAndGlyphs">btop</text>
+<text xml:space="preserve" x="38.8" y="104.0" fill="#66d9ef" textLength="117.6" lengthAdjust="spacingAndGlyphs">codersrank    </text>
+<text xml:space="preserve" x="164.8" y="104.0" fill="#bbbbbb" textLength="268.8" lengthAdjust="spacingAndGlyphs">#3,608 of 628,332 devs worldwide</text>
+<text xml:space="preserve" x="458.8" y="104.0" fill="#23e298" textLength="75.6" lengthAdjust="spacingAndGlyphs">top 0.57%</text>
+<text xml:space="preserve" x="38.8" y="124.0" fill="#66d9ef" textLength="117.6" lengthAdjust="spacingAndGlyphs">streak        </text>
+<text xml:space="preserve" x="164.8" y="124.0" fill="#bbbbbb" textLength="235.2" lengthAdjust="spacingAndGlyphs">430 days committing in a row</text>
+<text xml:space="preserve" x="38.8" y="144.0" fill="#66d9ef" textLength="117.6" lengthAdjust="spacingAndGlyphs">github        </text>
+<text xml:space="preserve" x="164.8" y="144.0" fill="#bbbbbb" textLength="352.8" lengthAdjust="spacingAndGlyphs">110 repos · 278 stars · 1,560 commits (1y)</text>
+<text xml:space="preserve" x="38.8" y="184.0" fill="#23e298" textLength="109.2" lengthAdjust="spacingAndGlyphs">top languages</text>
+<text xml:space="preserve" x="349.6" y="184.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">world rank</text>
+<text xml:space="preserve" x="517.6" y="184.0" fill="#6f7275" textLength="50.4" lengthAdjust="spacingAndGlyphs">Brazil</text>
+<text xml:space="preserve" x="38.8" y="204.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">JSON           </text>
+<rect x="164.8" y="194.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="194.0" width="168.0" height="10" rx="2" fill="#a0a0a0"/>
+<text xml:space="preserve" x="349.6" y="204.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs"># 1,635</text>
+<text xml:space="preserve" x="416.8" y="204.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of 282,889</text>
+<text xml:space="preserve" x="517.6" y="204.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#  167</text>
+<text xml:space="preserve" x="38.8" y="224.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">Python         </text>
+<rect x="164.8" y="214.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="214.0" width="140.3" height="10" rx="2" fill="#3572A5"/>
+<text xml:space="preserve" x="349.6" y="224.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs">#   782</text>
+<text xml:space="preserve" x="416.8" y="224.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of 165,446</text>
+<text xml:space="preserve" x="517.6" y="224.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#   87</text>
+<text xml:space="preserve" x="38.8" y="244.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">JavaScript     </text>
+<rect x="164.8" y="234.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="234.0" width="87.0" height="10" rx="2" fill="#f1e05a"/>
+<text xml:space="preserve" x="349.6" y="244.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs"># 4,896</text>
+<text xml:space="preserve" x="416.8" y="244.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of 279,502</text>
+<text xml:space="preserve" x="517.6" y="244.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#  518</text>
+<text xml:space="preserve" x="38.8" y="264.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">Shell          </text>
+<rect x="164.8" y="254.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="254.0" width="63.6" height="10" rx="2" fill="#89e051"/>
+<text xml:space="preserve" x="349.6" y="264.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs">#   188</text>
+<text xml:space="preserve" x="416.8" y="264.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of 139,766</text>
+<text xml:space="preserve" x="517.6" y="264.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#   18</text>
+<text xml:space="preserve" x="38.8" y="284.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">Jupyter        </text>
+<rect x="164.8" y="274.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="274.0" width="62.6" height="10" rx="2" fill="#DA5B0B"/>
+<text xml:space="preserve" x="349.6" y="284.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs">#   363</text>
+<text xml:space="preserve" x="416.8" y="284.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of  36,949</text>
+<text xml:space="preserve" x="517.6" y="284.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#   47</text>
+<text xml:space="preserve" x="38.8" y="304.0" fill="#bbbbbb" textLength="126.0" lengthAdjust="spacingAndGlyphs">HTML           </text>
+<rect x="164.8" y="294.0" width="168.0" height="10" rx="2" fill="#24282a"/>
+<rect x="164.8" y="294.0" width="38.3" height="10" rx="2" fill="#e34c26"/>
+<text xml:space="preserve" x="349.6" y="304.0" fill="#bbbbbb" textLength="58.8" lengthAdjust="spacingAndGlyphs"># 5,609</text>
+<text xml:space="preserve" x="416.8" y="304.0" fill="#6f7275" textLength="84.0" lengthAdjust="spacingAndGlyphs">of 292,563</text>
+<text xml:space="preserve" x="517.6" y="304.0" fill="#bbbbbb" textLength="50.4" lengthAdjust="spacingAndGlyphs">#  562</text>
+<text xml:space="preserve" x="38.8" y="344.0" fill="#66d9ef" textLength="117.6" lengthAdjust="spacingAndGlyphs">top of Brazil </text>
+<text xml:space="preserve" x="164.8" y="344.0" fill="#d08010" textLength="260.4" lengthAdjust="spacingAndGlyphs">Robot #1 of 17 · Xtext #1 of 10</text>
+<text xml:space="preserve" x="38.8" y="384.0" fill="#6f7275" textLength="378.0" lengthAdjust="spacingAndGlyphs">snapshot 2026-09-10 · codersrank.io/@thyarles</text>
+<text xml:space="preserve" x="22.0" y="404.0" fill="#23e298" textLength="142.8" lengthAdjust="spacingAndGlyphs">charles.santos@t7</text>
+<text xml:space="preserve" x="164.8" y="404.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">:</text>
+<text xml:space="preserve" x="173.2" y="404.0" fill="#d08010" textLength="8.4" lengthAdjust="spacingAndGlyphs">~</text>
+<text xml:space="preserve" x="181.6" y="404.0" fill="#bbbbbb" textLength="8.4" lengthAdjust="spacingAndGlyphs">$</text>
+<rect x="190.0" y="393.0" width="8.4" height="16" fill="#23e298"><animate attributeName="opacity" values="1;1;0;0" dur="1.06s" repeatCount="indefinite"/></rect>
+</svg>

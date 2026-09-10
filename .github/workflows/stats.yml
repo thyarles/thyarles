@@ -1,0 +1,47 @@
+name: Refresh stats card
+
+on:
+  schedule:
+    - cron: '17 05 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'assets/make-stats.py'
+      - 'assets/termsvg.py'
+      - '.github/workflows/stats.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-card
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Regenerate assets/stats.svg
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Regenerate the card
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 assets/make-stats.py
+
+      - name: Reject a malformed card
+        run: python3 -c "import xml.dom.minidom; xml.dom.minidom.parse('assets/stats.svg')"
+
+      - name: Commit if it changed
+        run: |
+          if [[ -z "$(git status --porcelain assets/stats.svg)" ]]; then
+            echo "card unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/stats.svg
+          git commit -m 'chore: refresh stats card'
+          git push

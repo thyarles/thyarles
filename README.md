@@ -8,29 +8,13 @@
 
 ---
 
-```ansi
-[32mcharles.santos@t7[0m:[33m~[0m$ neofetch
+<div align="center">
 
-        [33m.--.[0m           [32mcharles.santos[0m@[32mt7[0m
-       [33m|o_o |[0m          [90m------------------------------------------[0m
-       [33m|:_/ |[0m          [36mOS[0m         Linux — any distro that gives me a shell
-      [33m//   \ \[0m         [36mHost[0m       Brasília · DF · Brazil
-     [33m(|     | )[0m        [36mUptime[0m     30+ years in tech, still no downtime
-    [33m/'\_   _/`\[0m        [36mShell[0m      bash 5.2 (vim keybindings, obviously)
-    [33m\___)=(___/[0m        [36mWM[0m         Kubernetes [35m[CKS · CKA · CKAD][0m
-                       [36mPackages[0m   5 Linux Foundation certifications
-                       [36mKernel[0m     BSc Computer Eng → MSc Mechatronics
-                       [36mProcess[0m    PhD in Informatics @ UnB  [32m[running][0m
-                       [36mStopped[0m    BSc Statistics  [31m[50% · SIGSTOP][0m
-                       [36mJob 1[0m      Infra & DevOps Lead · MPT
-                       [36mJob 2[0m      Innovation · Hadoop/Cloudera + private LLMs
-                       [36mGPU[0m        clustered NVIDIA → [35msmartlabbr.org[0m
-                       [36mHistory[0m    VTEX (NYC HQ) 2021–2023 · QE Lead
-                       [36mLocale[0m     pt_BR.UTF-8 · en_US.UTF-8
-                       [36mBattery[0m    caffeine [32m[charging][0m
+<img src="https://raw.githubusercontent.com/thyarles/thyarles/main/assets/neofetch.svg"
+     alt="charles.santos@t7 — OS: Linux, any distro that gives me a shell. Host: Brasilia, DF, Brazil. Uptime: 30+ years in tech, first login at age 11. Shell: bash 5.2. WM: Kubernetes (CKS, CKA, CKAD). Packages: 5 Linux Foundation certifications. Kernel: BSc Computer Engineering, MSc Mechatronics. Modules: Quantum Computing specialization. Process: PhD in Informatics at UnB (running). Stopped: BSc Statistics (50%, SIGSTOP). Job 1: Infra and DevOps Lead at MPT. Job 2: Innovation, Hadoop/Cloudera and private LLMs. GPU: clustered NVIDIA for smartlabbr.org. History: VTEX (NYC HQ) 2021-2023, QE Lead. Locale: pt_BR.UTF-8, en_US.UTF-8. Battery: caffeine (charging)."
+     width="691" />
 
-[32mcharles.santos@t7[0m:[33m~[0m$ [90m# yes, that block is real ANSI. GitHub renders it.[0m
-```
+</div>
 
 <h3>$ <code>tree skills</code></h3>
 
@@ -88,11 +72,12 @@
 <img src="https://img.shields.io/badge/Hugo-1B1D1E?style=flat-square&logo=hugo&logoColor=FF4088" alt="Hugo" />
 </p>
 
-<h3>$ <code>btop</code></h3>
-
 <div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=thyarles&show_icons=true&hide_border=false&bg_color=1B1D1E&title_color=23E298&text_color=BBBBBB&icon_color=D08010&border_color=3A3D3E&border_radius=6" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thyarles&layout=compact&hide_border=false&bg_color=1B1D1E&title_color=23E298&text_color=BBBBBB&border_color=3A3D3E&border_radius=6" alt="Top languages" />
+
+<img src="https://raw.githubusercontent.com/thyarles/thyarles/main/assets/stats.svg"
+     alt="btop — CodersRank standing for thyarles: ranked #3,608 of 628,332 developers worldwide, a 430-day commit streak, plus GitHub repo, star and commit counts, and top languages with their worldwide and Brazil rankings."
+     width="691" />
+
 </div>
 
 <h3>$ <code>cat contact.txt</code></h3>

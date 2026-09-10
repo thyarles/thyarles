@@ -1,2 +1,5 @@
 **/venv
 **/node_modules
+assets/__pycache__/
+json/chgs.json
+json/get_pje.sh
