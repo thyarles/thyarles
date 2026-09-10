@@ -15,6 +15,8 @@
 <img src="https://img.shields.io/badge/Docker-1B1D1E?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker" />
 <img src="https://img.shields.io/badge/Terraform-1B1D1E?style=flat-square&logo=terraform&logoColor=7B42BC" alt="Terraform" />
 <img src="https://img.shields.io/badge/Ansible-1B1D1E?style=flat-square&logo=ansible&logoColor=EE0000" alt="Ansible" />
+</p>
+<p>
 <img src="https://img.shields.io/badge/GitHub_Actions-1B1D1E?style=flat-square&logo=githubactions&logoColor=2088FF" alt="GitHub Actions" />
 <img src="https://img.shields.io/badge/Bash-1B1D1E?style=flat-square&logo=gnubash&logoColor=23E298" alt="Bash" />
 <img src="https://img.shields.io/badge/Python-1B1D1E?style=flat-square&logo=python&logoColor=3776AB" alt="Python" />
