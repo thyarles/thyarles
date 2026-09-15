@@ -5,7 +5,7 @@ Edit ART / INFO below and re-run:  python3 assets/make-neofetch.py
 """
 import os
 
-from termsvg import (CYAN, GREEN, GREY, ORANGE, PINK, PURPLE, DIM,
+from termsvg import (CYAN, GREEN, GREY, ORANGE, PINK, PURPLE,
                      USER, command_col, prompt, render)
 
 INFO_COL, KEY_W = 23, 11          # column grid, in characters
@@ -44,8 +44,8 @@ INFO = [
 def build_rows():
     rows = [prompt("neofetch"), []]
 
-    # right-hand column: header, rule, then the key/value pairs
-    right = [[(0, USER, GREEN)], [(0, "-" * len(USER), DIM)]]
+    # right-hand column: the key/value pairs
+    right = []
     for key, runs in INFO:
         row, col = [(0, key.ljust(KEY_W), CYAN)], KEY_W
         for text, colour in runs:
