@@ -3,3 +3,4 @@
 assets/__pycache__/
 json/chgs.json
 json/get_pje.sh
+queue/__pycache__/
